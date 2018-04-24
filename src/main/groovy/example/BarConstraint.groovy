@@ -19,8 +19,6 @@ class BarConstraint extends AbstractConstraint {
 
     @Override
     protected Object validateParameter(Object constraintParameter) {
-        println "BarConstraint -> validateParameter: called"
-
         if (!constraintParameter instanceof String) {
             throw new IllegalArgumentException("Not supported")
         }
